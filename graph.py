@@ -14,7 +14,7 @@ load_dotenv()
 # ─────────────────────────────────────────────
 
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "llama-3.1-8b-instant"
 
 def call_llm(system: str, user: str) -> str:
     response = client.chat.completions.create(
